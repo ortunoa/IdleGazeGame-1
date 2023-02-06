@@ -9,9 +9,16 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Uu]serSettings/
+/[Aa]ssets/[Ss]amples/
+/[Aa]ssets/[Rr]esources/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
+
+# Ignore folders from Tobii SDK which will be installed locally
+/[Aa]ssets/[Ss]amples.meta
+/[Aa]ssets/[Rr]esources.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
