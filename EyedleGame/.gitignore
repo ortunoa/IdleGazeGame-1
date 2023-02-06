@@ -12,6 +12,7 @@
 /[Uu]serSettings/
 /[Aa]ssets/[Ss]amples/
 /[Aa]ssets/[Rr]esources/
+/[Aa]ssets/BIG_Environment_Pack_LP/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -19,6 +20,9 @@
 # Ignore folders from Tobii SDK which will be installed locally
 /[Aa]ssets/[Ss]amples.meta
 /[Aa]ssets/[Rr]esources.meta
+
+#Ignore asset folders from purchased assets installed locally
+/[Aa]ssets/BIG_Environment_Pack_LP.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
