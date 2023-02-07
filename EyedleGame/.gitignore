@@ -13,7 +13,9 @@
 /[Pp]rojectSettings/
 /[Aa]ssets/[Ss]amples/
 /[Aa]ssets/[Rr]esources/
+/[Aa]ssets/TextMesh Pro/
 /[Aa]ssets/BIG_Environment_Pack_LP/
+/[Aa]ssets/Idyllic Nature/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -24,6 +26,8 @@
 
 #Ignore asset folders from purchased assets installed locally
 /[Aa]ssets/BIG_Environment_Pack_LP.meta
+/[Aa]ssets/Idyllic Nature.meta
+/[Aa]ssets/TextMesh Pro.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
