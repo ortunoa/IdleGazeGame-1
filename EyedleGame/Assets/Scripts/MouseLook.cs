@@ -36,7 +36,7 @@ public class MouseLook : MonoBehaviour
 
         if (root != null)
         {
-            Quaternion rootRotation = Quaternion.Euler(rotX, 0.0f, 0.0f);
+            Quaternion rootRotation = Quaternion.Euler(0.0f, rotY, 0.0f);
             root.transform.rotation = rootRotation;
         }
 
