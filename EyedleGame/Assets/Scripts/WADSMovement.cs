@@ -25,5 +25,6 @@ public class WADSMovement : MonoBehaviour
             rb.AddForce(this.gameObject.transform.forward * sensitivity);
         if (Input.GetKey(KeyCode.S))
             rb.AddForce(-this.gameObject.transform.forward * sensitivity);
+
     }
 }
