@@ -6,7 +6,7 @@ public class RedDot : MonoBehaviour
 
     void Start()
     {
-        cameraTransform = GameObject.Find("Camera").transform;
+        cameraTransform = GameObject.Find("Main Camera").transform;
 
         // float halfWidth = Screen.width / 2;
         // float halfHeight = Screen.height / 2;
@@ -29,7 +29,7 @@ public class RedDot : MonoBehaviour
         transform.position = cameraTransform.position 
             // + cameraTransform.right * .5f 
             // + cameraTransform.up * 0.25f
-            + cameraTransform.forward * 1f ;
+            + cameraTransform.forward * 10f ;
         transform.LookAt(cameraTransform);
     }
 }
