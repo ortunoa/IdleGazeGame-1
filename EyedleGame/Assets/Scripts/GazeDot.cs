@@ -1,33 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Tobii.Gaming;
 
 public class GazeDot : MonoBehaviour
 {
     public Vector3 gazeToWorldPosition;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(ray, out hit))
+        GazePoint gazePoint = TobiiAPI.GetGazePoint();
+        if (gazePoint.IsValid)
         {
-            gazeToWorldPosition = hit.point;
+            // Convert the gaze point screen position to world position
+            gazeToWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(gazePoint.Screen.x, gazePoint.Screen.y, 10f));
+            gazeToWorldPosition.z = 0f;
         }
         else
         {
-            gazeToWorldPosition = ray.GetPoint(15f);
+            // If the gaze point is invalid, set the position to a default value
+            gazeToWorldPosition = new Vector3(0f, 0f, 0f);
         }
 
         this.transform.position = gazeToWorldPosition;
-        
     }
 }
